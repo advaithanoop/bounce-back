@@ -1,0 +1,112 @@
+[gd_scene format=3 uid="uid://d2sn322yigdtv"]
+
+[ext_resource type="PackedScene" uid="uid://cksth767l2dk4" path="res://Scenes/main_menu.tscn" id="1_7vrkn"]
+[ext_resource type="Script" uid="uid://bj45e616gtjhw" path="res://main_menu.gd" id="2_fu7sn"]
+[ext_resource type="Texture2D" uid="uid://1jkmhj1sdi82" path="res://Blue.png" id="3_fu7sn"]
+
+[node name="MainMenu" unique_id=50924942 instance=ExtResource("1_7vrkn")]
+script = ExtResource("2_fu7sn")
+
+[node name="Blue" type="Sprite2D" parent="TextureRect2" parent_id_path=PackedInt32Array(1837720577) index="0" unique_id=1174793768]
+position = Vector2(3.9362526, -276.2105)
+scale = Vector2(0.9147498, 0.87449425)
+texture = ExtResource("3_fu7sn")
+
+[node name="Blue" type="Sprite2D" parent="TextureRect2/Blue" index="0" unique_id=647708589]
+position = Vector2(3.9362526, -276.2105)
+scale = Vector2(0.9147498, 0.87449425)
+texture = ExtResource("3_fu7sn")
+
+[node name="Blue" type="Sprite2D" parent="TextureRect2/Blue/Blue" index="0" unique_id=1594190758]
+position = Vector2(3.9362526, -276.2105)
+scale = Vector2(0.9147498, 0.87449425)
+texture = ExtResource("3_fu7sn")
+
+[node name="TextureRect" parent="." index="1" unique_id=1283436777]
+offset_left = -357.0
+offset_top = -152.0
+offset_right = 377.5
+offset_bottom = 31.5
+
+[node name="Button" parent="." index="2" unique_id=1186523953]
+offset_left = -76.25
+offset_top = 65.5
+offset_right = 76.25
+offset_bottom = 132.5
+
+[node name="Blue" type="Sprite2D" parent="." index="3" unique_id=1316426774]
+position = Vector2(80.875, 70.5)
+scale = Vector2(2.5664063, 2.203125)
+texture = ExtResource("3_fu7sn")
+
+[node name="Blue" type="Sprite2D" parent="Blue" index="0" unique_id=2141331815]
+position = Vector2(388.14005, 234.43971)
+scale = Vector2(0.8909162, 0.87588644)
+texture = ExtResource("3_fu7sn")
+
+[node name="Blue" type="Sprite2D" parent="Blue/Blue" index="0" unique_id=1593026380]
+position = Vector2(3.9362526, -276.2105)
+scale = Vector2(0.9147498, 0.87449425)
+texture = ExtResource("3_fu7sn")
+
+[node name="Blue" type="Sprite2D" parent="Blue/Blue/Blue" index="0" unique_id=745034583]
+position = Vector2(3.9362526, -276.2105)
+scale = Vector2(0.9147498, 0.87449425)
+texture = ExtResource("3_fu7sn")
+
+[node name="Blue" type="Sprite2D" parent="Blue/Blue/Blue/Blue" index="0" unique_id=1225639400]
+position = Vector2(3.9362526, -276.2105)
+scale = Vector2(0.9147498, 0.87449425)
+texture = ExtResource("3_fu7sn")
+
+[node name="Blue2" type="Sprite2D" parent="Blue/Blue/Blue" index="1" unique_id=1524486756]
+position = Vector2(3.9362526, -276.2105)
+scale = Vector2(0.9147498, 0.87449425)
+texture = ExtResource("3_fu7sn")
+
+[node name="Blue" type="Sprite2D" parent="Blue/Blue/Blue/Blue2" index="0" unique_id=653258303]
+position = Vector2(3.9362526, -276.2105)
+scale = Vector2(0.9147498, 0.87449425)
+texture = ExtResource("3_fu7sn")
+
+[node name="Blue" type="Sprite2D" parent="Blue/Blue/Blue/Blue2/Blue" index="0" unique_id=1108015683]
+position = Vector2(3.9362526, -276.2105)
+scale = Vector2(0.9147498, 0.87449425)
+texture = ExtResource("3_fu7sn")
+
+[node name="Blue2" type="Sprite2D" parent="Blue/Blue" index="1" unique_id=1299078824]
+position = Vector2(-25.804134, -247.70854)
+scale = Vector2(0.9147498, 0.87449425)
+texture = ExtResource("3_fu7sn")
+
+[node name="Blue" type="Sprite2D" parent="Blue/Blue/Blue2" index="0" unique_id=1216626387]
+position = Vector2(3.9362526, -276.2105)
+scale = Vector2(0.9147498, 0.87449425)
+texture = ExtResource("3_fu7sn")
+
+[node name="Blue" type="Sprite2D" parent="Blue/Blue/Blue2/Blue" index="0" unique_id=2057136430]
+position = Vector2(3.9362526, -276.2105)
+scale = Vector2(0.9147498, 0.87449425)
+texture = ExtResource("3_fu7sn")
+
+[node name="Blue2" type="Sprite2D" parent="." index="4" unique_id=279039471]
+position = Vector2(63.999992, 590.99994)
+scale = Vector2(1.890625, 1.796875)
+texture = ExtResource("3_fu7sn")
+
+[node name="Blue" type="Sprite2D" parent="Blue2" index="0" unique_id=224691081]
+position = Vector2(40.727287, -41.739147)
+scale = Vector2(1.3214909, 1.3008626)
+texture = ExtResource("3_fu7sn")
+
+[node name="Blue" type="Sprite2D" parent="Blue2/Blue" index="0" unique_id=408044736]
+position = Vector2(3.9362526, -276.2105)
+scale = Vector2(0.9147498, 0.87449425)
+texture = ExtResource("3_fu7sn")
+
+[node name="Blue" type="Sprite2D" parent="Blue2/Blue/Blue" index="0" unique_id=2065571453]
+position = Vector2(3.9362526, -276.2105)
+scale = Vector2(0.9147498, 0.87449425)
+texture = ExtResource("3_fu7sn")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
